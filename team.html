@@ -1,102 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Amazing Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Amazing Team - Grid Layout</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Z6V2VuVjs6KBg/dK/yQ4DoSpF7vZTw+zKb4VQd6dI+u5ehH7ghYZU/1J07xS7KJTOyXoXIBQW1Lf1LrDkYBE8A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <link rel="stylesheet" href="team.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Z6V2VuVjs6KBg/dK/yQ4DoSpF7vZTw+zKb4VQd6dI+u5ehH7ghYZU/1J07xS7KJTOyXoXIBQW1Lf1LrDkYBE8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <section class="team-section">
-    <h1>Our Amazing Team</h1>
-    <div class="team-container">
-      <!-- Top Row -->
-      <div class="team-row top-row">
+  <h1 class="immersive-heading">Our Amazing Team</h1>
+
+
+    <!-- Board of Advisors -->
+    <div class="team-group">
+      <h2>Board of Advisors</h2>
+      <div class="team-grid">
         <div class="member-card">
-          <img src="https://via.placeholder.com/100" alt="Nat Reynolds" />
+          <div class="accent-bar accent-blue"></div>
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Nat Reynolds" />
           <h3>NAT REYNOLDS</h3>
           <p class="role">Worldwide Partner</p>
           <div class="socials">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
         <div class="member-card">
-          <img src="https://via.placeholder.com/100" alt="Jennie Roberts" />
+          <div class="accent-bar accent-blue"></div>
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jennie Roberts" />
           <h3>JENNIE ROBERTS</h3>
           <p class="role">Partner</p>
           <div class="socials">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
         <div class="member-card">
-          <img src="https://via.placeholder.com/100" alt="Ann Richmond" />
+          <div class="accent-bar accent-blue"></div>
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ann Richmond" />
           <h3>ANN RICHMOND</h3>
           <p class="role">Partner</p>
           <div class="socials">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
-        </div>
-        <div class="member-card">
-          <img src="https://via.placeholder.com/100" alt="James Oliver" />
-          <h3>JAMES OLIVER</h3>
-          <p class="role">Associate Partner</p>
-          <div class="socials">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bottom Row -->
-      <div class="team-row bottom-row">
-        <div class="member-card">
-          <img src="https://via.placeholder.com/100" alt="Monica Pouli" />
-          <h3>MONICA POULI</h3>
-          <p class="role">Creative Leader</p>
-          <div class="socials">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
-        </div>
-        <div class="member-card">
-          <img src="https://via.placeholder.com/100" alt="Walter Lilly" />
-          <h3>WALTER LILLY</h3>
-          <p class="role">Marketing Manager</p>
-          <div class="socials">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
-        </div>
-        <div class="member-card">
-          <img src="https://via.placeholder.com/100" alt="Bob Wilson" />
-          <h3>BOB WILSON</h3>
-          <p class="role">Territory Manager</p>
-          <div class="socials">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
-        </div>
-        <div class="member-card">
-          <img src="https://via.placeholder.com/100" alt="Mila Carvalho" />
-          <h3>MILA CARVALHO</h3>
-          <p class="role">Human Resources Manager</p>
-          <div class="socials">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Board of Directors -->
+    <div class="team-group">
+      <h2>Board of Directors</h2>
+      <div class="team-grid">
+        <div class="member-card">
+          <div class="accent-bar accent-green"></div>
+          <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="James Oliver" />
+          <h3>JAMES OLIVER</h3>
+          <p class="role">Associate Partner</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="accent-bar accent-green"></div>
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Monica Pouli" />
+          <h3>MONICA POULI</h3>
+          <p class="role">Creative Leader</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="accent-bar accent-green"></div>
+          <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Walter Lilly" />
+          <h3>WALTER LILLY</h3>
+          <p class="role">Marketing Manager</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Honorary Secretary -->
+    <div class="team-group">
+      <h2>Honorary Secretary</h2>
+      <div class="team-grid">
+        <div class="member-card">
+          <div class="accent-bar accent-purple"></div>
+          <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Mila Carvalho" />
+          <h3>MILA CARVALHO</h3>
+          <p class="role">Human Resources Manager</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mentors -->
+    <div class="team-group">
+      <h2>Mentors</h2>
+      <div class="team-grid">
+        <div class="member-card">
+          <div class="accent-bar accent-orange"></div>
+          <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Bob Wilson" />
+          <h3>BOB WILSON</h3>
+          <p class="role">Territory Manager</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 </body>
 </html>
