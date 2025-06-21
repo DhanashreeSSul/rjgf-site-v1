@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Our Amazing Team - Grid Layout</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-Z6V2VuVjs6KBg/dK/yQ4DoSpF7vZTw+zKb4VQd6dI+u5ehH7ghYZU/1J07xS7KJTOyXoXIBQW1Lf1LrDkYBE8A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <title>Team</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="rjgf.jpg">
   <link rel="stylesheet" href="team.css" />
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
+
   <section class="team-section">
   <h1 class="immersive-heading">Our Amazing Team</h1>
 
@@ -135,5 +134,21 @@
     </div>
 
   </section>
+   <div id="footer-placeholder"></div>
+  <script>
+  fetch("footer.html")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    })
+    .catch(error => {
+      console.error("Error fetching footer:", error);
+    }); 
+  </script>
 </body>
 </html>

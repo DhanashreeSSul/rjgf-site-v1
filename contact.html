@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="rjgf.jpg">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e6f0ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .custom-header {
+  background: linear-gradient(135deg, #003973, #0057a2);
+  padding: 2rem;
+  color: white;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.text-section {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+}
+
+.text-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.text-section p {
+  font-size: 1.1rem;
+  color: #d0e3ff;
+}
+
+.image-section {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  text-align: right;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-section img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section {
+  background: linear-gradient(135deg, #e8f3ff, #c6d9e9);
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-card {
+  background: #fff;
+  color: #333;
+  padding: 2rem;
+  border-radius: 16px;
+  flex: 1;
+  min-width: 320px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form h2,
+.contact-info h2 {
+  font-size: 1.8rem;
+  color: #003973;
+  
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.contact-form button i {
+  margin-right: 8px;
+}
+
+.contact-info p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+}
+
+.contact-info i {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.social-icons {
+  margin: 1rem 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 1.3rem;
+  color: #007bff;
+  background: #e9f2ff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #b7d6ff;
+  color: white;
+  transform: scale(1.2);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    @media(max-width: 768px) {
+      header img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="custom-header">
+  <div class="header-content">
+    <div class="text-section">
+      <h1>Contact Us</h1>
+      <p>We're here to help. Get in touch with us anytime!</p>
+    </div>
+    <div class="image-section">
+      <img src="Contact-us.png" alt="Support Image">
+    </div>
+  </div>
+</header>
+
+
+  <section class="contact-section">
+  <div class="contact-container">
+    
+    <!-- Contact Form -->
+    <div class="contact-form contact-card">
+      <h2><i class="fa fa-paper-plane"></i> Send Us a Message</h2>
+      <form action="https://formspree.io/f/xkgbbnbz" method="POST" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit"><i class="fa fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info contact-card">
+      <h2><i class="fa fa-address-book"></i> Contact Information</h2>
+      <p><i class="fa fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa fa-envelope"></i> info@example.com</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+
+      <h3><i class="fa fa-map-marker-alt"></i> Our Location</h3>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.2732829148927!2d73.75906487501656!3d18.65172878246749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e76c8fa205%3A0x1b210131915734fd!2sPCCOE%20-%20Pimpri%20Chinchwad%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1749895562882!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+     <div id="footer-placeholder"></div>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(e) {
+      alert('Your message has been sent to the organizers!');
+    });
+    
+  
+
+  fetch("footer.html")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    })
+    .catch(error => {
+      console.error("Error fetching footer:", error);
+    }); 
+  </script>
+
+</body>
+</html>

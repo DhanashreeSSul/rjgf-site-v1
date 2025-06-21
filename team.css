@@ -50,7 +50,7 @@ body {
   display: block;
   width: 180px;
   height: 6px;
-  background: #0077cc;
+  background: linear-gradient(135deg, #003973, #0057a2);
   margin: 20px auto 0;
   border-radius: 4px;
   animation: pulseUnderline 3s ease-in-out infinite;
@@ -71,7 +71,7 @@ body {
 .team-section::before {
   width: 400px;
   height: 400px;
-  background: #0047ab;
+  background: linear-gradient(135deg, #003973, #0057a2);
   top: 20px;
   left: -150px;
 }
