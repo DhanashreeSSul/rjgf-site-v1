@@ -1,0 +1,70 @@
+.inspiration-title {
+  position: absolute;
+  top: 5.5em; /* increased from 2em to 3.5em to avoid overlap */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.4em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 2px;
+  text-shadow: 0 2px 18px rgba(6,57,112,0.07);
+  z-index: 2;
+  animation: fadeInDown 1.2s cubic-bezier(.77,0,.18,1) 0.2s both;
+}
+
+.hero {
+  padding-top: 60em; /* added padding top to create space for the title */
+}
+
+/* Animation for last 5 info cards */
+.info-card:nth-last-child(-n+5) {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info-card:nth-last-child(-n+5):hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(14,165,233,0.3);
+}
+.inspiration-title {
+  margin-top: 0 em;    /* at least 2 lines above */
+   /* at least 2 lines below */
+}
+
+.hero {
+  padding-top: 8em;     /* extra space above section */
+  padding-bottom: 3em;  /* extra space below section */
+}
+
+.hero-image img {
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.hero-text {
+  animation: fadeInSlide 2s ease forwards;
+}
+
+@keyframes fadeInSlide {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.hero-image img {
+  transition: transform 1.4s cubic-bezier(.77,0,0.18,1), box-shadow 0.5s;
+}
+.hero-image img:hover {
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 0 0 32px 0 rgba(14,165,233,0.25), 0 0 0 4px #0ea5e933;
+}
+
+.hero-text {
+  transition: transform 1.4s cubic-bezier(.77,0,.18,1), box-shadow 0.4s, border 0.4s;
+}
+.hero-text:hover {
+  transform: scale(1.03) translateY(-6px);
+  box-shadow: 0 8px 32px rgba(6,57,112,0.16);
+  border: 2px solid  rgba(14,165,233,0.3);
+}

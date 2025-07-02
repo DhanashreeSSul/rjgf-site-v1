@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="rjhomepg.css">
+  <meta charset="UTF-8">
+  <title>Our Program</title>
+  <style>
+    body {
+      background: #e6f3fa;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .program-section {
+      text-align: center;
+      padding: 40px 0;
+    }
+    .program-section h2 {
+      color: #5a3646;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      font-family: 'Georgia', serif;
+    }
+    .program-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .program-card {
+      background: transparent;
+      width: 270px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .program-image {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 120px 120px 0 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .program-title {
+      color: #5a3646;
+      font-weight: bold;
+      margin-top: 18px;
+      margin-bottom: 5px;
+      font-size: 1.1em;
+    }
+    .program-desc {
+      color: #5a3646;
+      font-size: 1em;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    @media (max-width: 900px) {
+      .program-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    /* Slider */
+    .slider-container {
+      background: linear-gradient(90deg, #e0e7ff 60%, #f0fdfa 100%);
+      padding: 2.5em 0;
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+    }
+    .slider-track {
+      display: flex;
+      gap: 1.2em;
+      width: max-content;
+      animation: slide 35s linear infinite;
+      align-items: center;
+    }
+    .slider-track img {
+      width: 480px;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(14,165,233,0.08);
+      filter: grayscale(0.08) contrast(1.07) brightness(1.06);
+      transition: transform 0.4s, filter 0.4s;
+    }
+    .slider-track img:hover {
+      transform: scale(1.05) rotate(-1deg);
+      filter: grayscale(0) contrast(1.2) brightness(1.13);
+      z-index: 2;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0);}
+      100% { transform: translateX(-1800px);}
+    }
+    
+
+  </style>
+</head>
+<body>
+    <header>
+  <img src="WhatsApp Image 2025-06-12 at 10.22.32 PM.png" alt="RJGF Logo" class="logo">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Media & Recognition</a>
+    <a href="#">Our Work</a>
+    <a href="#">Our Team</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact Us</a>
+  </nav>
+</header>
+<!-- HERO SECTION WITH VIDEO -->
+<section class="hero-section">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="13875519_3840_2160_30fps.mp4" type="video/mp4" />
+    
+  </video>
+
+  <div class="hero-overlay">
+    <div class="hero-box">
+      <h1>UNITED FOR THE BRIGHT FUTURE</h1>
+      <button class="donate-btn">DONATE NOW</button>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION BELOW VIDEO -->
+<section class="below-hero">
+  <h2>Empowering lives, nurturing hope,<br> and growing a better tomorrow together.</h2>
+  <p>
+    Raveendra Jadhav Global Foundation is a people-powered movement committed to uplifting communities through better healthcare, inclusive education, and sustainable environmental practices. From free health camps and scholarships to green initiatives and community outreach, we strive to create lasting change—one life, one neighborhood, one future at a time.
+  </p>
+</section>
+
+  <section class="program-section">
+    <h2>Our Program</h2>
+    <div class="program-cards">
+      <!-- Card 1 -->
+      <div class="program-card">
+        <img src="Screenshot 2025-06-24 150833.png"
+             alt="Books" class="program-image">
+        <div class="program-title">Future First</div>
+        <div class="program-desc">Because every child's future deserves a head start</div>
+      </div>
+      <!-- Card 2 -->
+      <div class="program-card">
+        <img src="Screenshot 2025-06-24 150912.png"
+             alt="Lotus" class="program-image">
+        <div class="program-title">Nature Nurture</div>
+        <div class="program-desc">Empowering for Ecology</div>
+      </div>
+      <!-- Card 3 -->
+      <div class="program-card">
+        <img src="Screenshot 2025-06-24 151029.png"
+             alt="Healing Hands" class="program-image">
+        <div class="program-title">Healing Hands</div>
+        <div class="program-desc">Symbolizing care and compassion</div>
+      </div>
+    </div>
+  </section>
+  <!-- Image Slider -->
+  <section class="slider-container">
+    <div class="slider-track">
+      <img src="0M4A8590_converted.png" alt="">
+      <img src="0M4A8707_converted.png" alt="">
+      <img src="WhatsApp Image 2025-06-17 at 3.10.23 PM_converted.png" alt="">
+      <img src="0M4A8662_converted.png" alt="">
+      <img src="0M4A8948_converted.png" alt="">
+      <img src="c1_converted.png" alt="">
+      <img src="0M4A8590_converted.png" alt="">
+      <img src="0M4A8707_converted.png" alt="">
+      <img src="WhatsApp Image 2025-06-17 at 3.10.23 PM_converted.png" alt="">
+      <img src="0M4A8662_converted.png" alt="">
+    </div>
+  </section>
+  <div class="card-section">
+  <div class="custom-card animate-in">
+    <div class="card-header">
+      <img class="card-icon" src="Screenshot 2025-06-24 123359.png" alt="Logo">
+      <div class="card-title">
+        BLESSINGS FROM HER HIGHNESS 
+<br>
+        SMT.PRATIBHA DEVISINH SHEKHAWAT (PATIL)
+      </div>
+    </div>
+    <img src="Screenshot 2025-06-24 115933.png" alt="Garden View" class="card-image">
+  </div>
+  <div class="custom-card animate-in" style="animation-delay: 0.3s;">
+    <div class="card-header">
+     <img class="card-icon" src="Screenshot 2025-06-24 124030.png" alt="Logo">
+      <div class="card-title">
+        BLESSINGS FROM SHRI NITIN JI GADKARI<br>
+        CABINET MINISTER OF ROAD TRANSPORT AND HIGHWAYS
+
+      </div>
+    </div>
+    <img src="Screenshot 2025-06-24 120413.png" alt="Garden View" class="card-image">
+  </div>
+</div>
+<section class="partners-section">
+        <div class="section-header">
+            <h2>Our  Partners</h2>
+            
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <!-- First set of logos -->
+                <img src="logo1.jpeg" alt="Partner 1" class="partner-logo">
+                <img src="logo2.jpeg" alt="Partner 2" class="partner-logo">
+                <img src="logo3.jpeg" alt="Partner 3" class="partner-logo">
+                <img src="logo4.jpeg" alt="Partner 4" class="partner-logo">
+                <img src="logo5.jpeg" alt="Partner 5" class="partner-logo">
+                <img src="logo6.jpeg" alt="Partner 6" class="partner-logo">
+                <img src="logo7.jpeg" alt="Partner 7" class="partner-logo">
+                <img src="logo8.jpeg" alt="Partner 8" class="partner-logo">
+                <img src="logo9.jpeg" alt="Partner 9" class="partner-logo">
+                <img src="logo10.jpeg" alt="Partner 10" class="partner-logo">
+                
+                <!-- Duplicated logos for seamless loop -->
+                <img src="logo1.jpeg" alt="Partner 1" class="partner-logo">
+                <img src="logo2.jpeg" alt="Partner 2" class="partner-logo">
+                <img src="logo3.jpeg" alt="Partner 3" class="partner-logo">
+                <img src="logo4.jpeg" alt="Partner 4" class="partner-logo">
+                <img src="logo5.jpeg" alt="Partner 5" class="partner-logo">
+                <img src="logo6.jpeg" alt="Partner 6" class="partner-logo">
+                <img src="logo7.jpeg" alt="Partner 7" class="partner-logo">
+                <img src="logo8.jpeg" alt="Partner 8" class="partner-logo">
+                <img src="logo9.jpeg" alt="Partner 9" class="partner-logo">
+                <img src="logo10.jpeg" alt="Partner 10" class="partner-logo">
+            </div>
+</div>
+
+
+</body>
+</html>
